@@ -1901,15 +1901,15 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   15. RESPONSIVE BREAKPOINTS (MOBILE & TABLET)
+   15. MOBILE-FIRST RESPONSIVE DESIGN SYSTEM (PHONES & TABLETS)
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
-  .hero-container, .calc-grid, .contact-grid, .map-graphic-box {
+  .hero-container, .calc-grid, .contact-grid, .map-graphic-box, .analyzer-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
-  .features-grid, .solution-grid, .portfolio-grid, .testimonials-grid {
+  .features-grid, .solution-grid, .portfolio-grid, .testimonials-grid, .academy-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1919,31 +1919,267 @@ button, input, select, textarea {
 }
 
 @media (max-width: 768px) {
+  .announcement-bar {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.5rem;
+  }
+
+  .announcement-content {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .navbar {
+    padding: 0.8rem 0;
+  }
+
+  .brand-logo {
+    font-size: 1.15rem;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
   .nav-menu {
     display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: rgba(11, 15, 20, 0.98);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.2rem;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .nav-menu.mobile-open {
+    display: flex !important;
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+    width: 100%;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    width: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0 0 0 1rem;
+  }
+
+  .nav-actions {
+    gap: 0.6rem;
+  }
+
+  .nav-cta {
+    display: none; /* Hide top header CTA button on small screens */
   }
 
   .mobile-toggle {
     display: block;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    padding: 2.5rem 0 4rem 0;
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
+    line-height: 1.25;
   }
 
-  .features-grid, .solution-grid, .portfolio-grid, .testimonials-grid, .admin-stats-cards {
-    grid-template-columns: 1fr;
+  .hero-subtitle {
+    font-size: 0.98rem;
+    margin-bottom: 1.8rem;
   }
 
-  .footer-container {
-    grid-template-columns: 1fr;
+  .hero-ctas {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
   }
 
   .hero-stats-row {
     grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  .hero-stat-card .stat-value {
+    font-size: 1.4rem;
+  }
+
+  .hero-bg-img {
+    height: 250px;
+  }
+
+  .hero-card-glass {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: -30px;
+    padding: 1.2rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .calculator-card, .roof-analyzer-card, .contact-card, .map-container {
+    padding: 1.2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .metrics-output-grid, .ai-metrics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .m-val, .ai-m-val {
+    font-size: 1.15rem;
+  }
+
+  .out-number {
+    font-size: 2.4rem;
+  }
+
+  .services-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.6rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .services-tabs .tab-btn {
+    white-space: nowrap;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.88rem;
+  }
+
+  .features-grid, .solution-grid, .portfolio-grid, .testimonials-grid, .academy-grid, .admin-stats-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .featured-sol {
     transform: none;
   }
+
+  .subsidy-table-container {
+    padding: 0.8rem 0;
+  }
+
+  .subsidy-table th, .subsidy-table td {
+    padding: 0.8rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .portfolio-filter-buttons {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .map-graphic-box {
+    padding: 1rem;
+  }
+
+  .map-svg-mockup {
+    height: 280px;
+  }
+
+  .pin-label {
+    display: none; /* Hide long map pin labels on phone screens */
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Mobile AI Chatbot & Modal Tuning */
+  .ai-chat-trigger {
+    width: 52px;
+    height: 52px;
+    font-size: 1.3rem;
+  }
+
+  .chat-window {
+    width: calc(100vw - 2rem);
+    right: 1rem;
+    bottom: 75px;
+    height: 72vh;
+  }
+
+  .modal-card {
+    width: 94%;
+    padding: 1.5rem;
+  }
 }
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .out-number {
+    font-size: 2.1rem;
+  }
+
+  .btn-lg {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+

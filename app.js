@@ -443,3 +443,34 @@ function runAiRoofAnalysis(label, area, kw, risk) {
   }
 }
 
+/* --------------------------------------------------------------------------
+   12. MOBILE MENU OVERLAY CONTROLLER
+   -------------------------------------------------------------------------- */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobile-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (toggleBtn && navMenu) {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navMenu.classList.toggle('mobile-open');
+    });
+
+    // Close mobile menu when clicking any nav link
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('mobile-open');
+      });
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+        navMenu.classList.remove('mobile-open');
+      }
+    });
+  }
+}
+
+

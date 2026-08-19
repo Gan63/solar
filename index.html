@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solaria Energy | India's #1 Tier-1 Smart Solar & Rooftop Solutions</title>
+  <meta name="description" content="Solaria Energy is India's leading solar EPC company providing high-efficiency rooftop solar panel installations, commercial PPA models, and PM Surya Ghar government subsidy assistance in Coimbatore, Tamil Nadu, and Pan-India.">
+  <meta name="keywords" content="Solar Company India, Solar Company Coimbatore, Rooftop Solar Installation, Solar EPC Company, PM Surya Ghar Subsidy, Commercial Solar Tamil Nadu">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Solaria Energy India",
+    "image": "https://solaria-energy.in/assets/logo.png",
+    "@id": "https://solaria-energy.in",
+    "url": "https://solaria-energy.in",
+    "telephone": "+91-422-7100-SOLAR",
+    "priceRange": "₹₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Solaria Green Park, Avinashi Road",
+      "addressLocality": "Coimbatore",
+      "addressRegion": "TN",
+      "postalCode": "641004",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.0168,
+      "longitude": 76.9558
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/solariaenergyindia",
+      "https://www.linkedin.com/company/solaria-energy-india",
+      "https://twitter.com/solaria_solar_in"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span><i class="fa-solid fa-bolt text-gold"></i> <strong>PM Surya Ghar Muft Bijli Yojana:</strong> Get up to <strong>₹78,000</strong> Direct Govt Subsidy on Residential Solar!</span>
+      <a href="#subsidy" class="badge-link">Claim Subsidy <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" onclick="switchView('home-view')">
+        <div class="logo-icon"><i class="fa-solid fa-sun text-gold"></i></div>
+        <span class="logo-text">SOLARIA<span class="logo-highlight">ENERGY</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" onclick="switchView('home-view')">Home</a>
+        <div class="dropdown">
+          <a href="#services" class="nav-link dropdown-toggle">Solutions <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+          <div class="dropdown-menu">
+            <a href="#residential" class="dropdown-item" onclick="switchView('home-view'); scrollToSection('residential')"><i class="fa-solid fa-house-chimney text-gold"></i> Residential Rooftop</a>
+            <a href="#commercial" class="dropdown-item" onclick="switchView('home-view'); scrollToSection('commercial')"><i class="fa-solid fa-building text-gold"></i> Commercial & Industrial</a>
+            <a href="#agricultural" class="dropdown-item" onclick="switchView('home-view'); scrollToSection('agricultural')"><i class="fa-solid fa-wheat-awn text-gold"></i> Agricultural Solar Pumps</a>
+          </div>
+        </div>
+        <a href="#calculator" class="nav-link" onclick="switchView('calculator-view')">Solar Calculator</a>
+        <a href="#subsidy" class="nav-link" onclick="switchView('home-view'); scrollToSection('subsidy')">PM Subsidy</a>
+        <a href="#portfolio" class="nav-link" onclick="switchView('projects-view')">Projects</a>
+        <a href="#about" class="nav-link" onclick="switchView('about-view')">About Us</a>
+        <a href="#admin" class="nav-link nav-special" onclick="switchView('admin-view')"><i class="fa-solid fa-gauge-high"></i> Admin Portal</a>
+        <a href="#app" class="nav-link nav-special" onclick="switchView('app-view')"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary nav-cta" onclick="switchView('home-view'); scrollToSection('contact')">
+          <span>Get Free Assessment</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN VIEW CONTAINER -->
+  <main id="main-content">
+
+    <!-- ==================== HOME VIEW ==================== -->
+    <div id="home-view" class="view-page active">
+      
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="home">
+        <div class="hero-background-gradient"></div>
+        <div class="hero-glow-orb hero-glow-1"></div>
+        <div class="hero-glow-orb hero-glow-2"></div>
+        
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>Ranked #1 Smart Solar EPC Company in Tamil Nadu & Pan-India</span>
+            </div>
+
+            <h1 class="hero-title">
+              Power Your Tomorrow With <span class="gradient-text">India's Most Efficient</span> Smart Solar Systems
+            </h1>
+
+            <p class="hero-subtitle">
+              Engineered with Tesla-inspired technology, Tier-1 N-Type TOPCon panels (22.8% efficiency), 30-year performance guarantee, and <strong>up to ₹78,000 instant PM Surya Ghar Govt Subsidy</strong>.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#contact" class="btn btn-primary btn-lg shadow-glow" onclick="scrollToSection('contact')">
+                <i class="fa-solid fa-clipboard-check"></i> Get Free Rooftop Survey
+              </a>
+              <a href="#calculator" class="btn btn-glass btn-lg" onclick="scrollToSection('calculator')">
+                <i class="fa-solid fa-calculator text-gold"></i> Live Savings Calculator
+              </a>
+            </div>
+
+            <!-- Live Trust Badges -->
+            <div class="hero-stats-row">
+              <div class="hero-stat-card">
+                <div class="stat-value text-gold" id="counter-mw">500+</div>
+                <div class="stat-label">MW Installed Across India</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-value text-green">14,200+</div>
+                <div class="stat-label">Happy Solar Roofs</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-value text-cyan">₹185 Cr+</div>
+                <div class="stat-label">Annual Client Bill Savings</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-value">30 Yrs</div>
+                <div class="stat-label">Linear Power Warranty</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Floating Visual Card -->
+          <div class="hero-visual">
+            <div class="hero-card-glass">
+              <div class="card-header-row">
+                <span class="card-tag"><i class="fa-solid fa-bolt"></i> Real-time Telemetry</span>
+                <span class="status-pill status-active"><i class="fa-solid fa-circle"></i> Live Grid Sync</span>
+              </div>
+              <div class="hero-preview-meter">
+                <div class="meter-circle">
+                  <svg class="progress-ring" width="160" height="160">
+                    <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="12" fill="transparent" r="68" cx="80" cy="80"/>
+                    <circle class="progress-ring__circle" stroke="url(#goldGradient)" stroke-width="12" stroke-linecap="round" fill="transparent" r="68" cx="80" cy="80" stroke-dasharray="427" stroke-dashoffset="64"/>
+                    <defs>
+                      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ffb703" />
+                        <stop offset="100%" stop-color="#10b981" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <div class="meter-text">
+                    <span class="meter-number">8.4 <small>kW</small></span>
+                    <span class="meter-label">Live Generation</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="telemetry-grid">
+                <div class="telemetry-item">
+                  <span class="t-label">Today's Energy</span>
+                  <span class="t-val text-gold">42.8 kWh</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="t-label">Bill Reduction</span>
+                  <span class="t-val text-green">94.2%</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="t-label">CO2 Offset</span>
+                  <span class="t-val text-cyan">1.2 Tons</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="t-label">Grid Feedback</span>
+                  <span class="t-val">18.6 kWh</span>
+                </div>
+              </div>
+
+              <div class="hero-mini-cta">
+                <i class="fa-solid fa-shield-halved text-gold"></i> <span>TANGEDCO Net-Metering Approved</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIVE AI SOLAR SAVINGS CALCULATOR SECTION -->
+      <section class="section section-calculator" id="calculator">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-microchip"></i> AI Solar Savings Engine</span>
+            <h2 class="section-title">Calculate Your Exact Rooftop Solar ROI & Government Subsidy</h2>
+            <p class="section-subtitle">Real-time calculations tailored for Tamil Nadu electricity tariffs (TANGEDCO) and pan-India discom rates.</p>
+          </div>
+
+          <div class="calculator-card glass-panel">
+            <div class="calc-grid">
+              
+              <!-- Input Controls -->
+              <div class="calc-inputs">
+                <h3 class="calc-title"><i class="fa-solid fa-sliders text-gold"></i> Enter Your Details</h3>
+
+                <div class="form-group">
+                  <label class="form-label" for="calc-bill-slider">
+                    Average Monthly Electricity Bill: <strong class="text-gold" id="bill-val-display">₹5,000</strong>
+                  </label>
+                  <input type="range" id="calc-bill-slider" min="1500" max="100000" step="500" value="5000" class="range-slider">
+                  <div class="slider-ticks">
+                    <span>₹1.5k</span>
+                    <span>₹25k</span>
+                    <span>₹50k</span>
+                    <span>₹100k+</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="calc-sector">Connection Type</label>
+                    <select id="calc-sector" class="form-control">
+                      <option value="residential" selected>Residential Rooftop (PM Subsidy Eligible)</option>
+                      <option value="commercial">Commercial / Industrial (CAPEX/OPEX)</option>
+                      <option value="agricultural">Agricultural Solar Pump</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="calc-city">Location / City</label>
+                    <select id="calc-city" class="form-control">
+                      <option value="coimbatore" selected>Coimbatore (HQ)</option>
+                      <option value="chennai">Chennai</option>
+                      <option value="madurai">Madurai</option>
+                      <option value="salem">Salem / Erode</option>
+                      <option value="bengaluru">Bengaluru</option>
+                      <option value="other">Other Tamil Nadu / Pan-India</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="calc-roof-area">Available Roof Area (Sq. Ft): <strong id="roof-val-display" class="text-cyan">400 sq.ft</strong></label>
+                  <input type="range" id="calc-roof-area" min="150" max="5000" step="50" value="400" class="range-slider">
+                </div>
+
+                <div class="calc-info-box">
+                  <i class="fa-solid fa-lightbulb text-gold"></i>
+                  <span><strong>Did You Know?</strong> Residential consumers in Tamil Nadu receive <strong>₹78,000 direct bank transfer subsidy</strong> for 3kW systems under PM Surya Ghar.</span>
+                </div>
+              </div>
+
+              <!-- Output Display Cards -->
+              <div class="calc-outputs">
+                <div class="output-header-badge">
+                  <span>Recommended Solar Configuration</span>
+                </div>
+
+                <div class="output-main-stat">
+                  <span class="out-label">Recommended System Capacity</span>
+                  <span class="out-number gradient-text" id="out-system-size">3.6 kW</span>
+                  <span class="out-sub">Requires approx <span id="out-panels-count">8</span> N-Type TOPCon Panels</span>
+                </div>
+
+                <div class="metrics-output-grid">
+                  <div class="metric-card">
+                    <span class="m-title">Yearly Bill Savings</span>
+                    <span class="m-val text-green" id="out-annual-savings">₹54,000</span>
+                    <span class="m-sub">/ year saved forever</span>
+                  </div>
+
+                  <div class="metric-card">
+                    <span class="m-title">PM Surya Ghar Subsidy</span>
+                    <span class="m-val text-gold" id="out-subsidy">₹78,000</span>
+                    <span class="m-sub">Direct Bank Credit</span>
+                  </div>
+
+                  <div class="metric-card">
+                    <span class="m-title">Est. Net Investment</span>
+                    <span class="m-val" id="out-net-cost">₹1,18,000</span>
+                    <span class="m-sub">After subsidy deduction</span>
+                  </div>
+
+                  <div class="metric-card">
+                    <span class="m-title">Payback Period</span>
+                    <span class="m-val text-cyan" id="out-payback">2.2 Years</span>
+                    <span class="m-sub">27.8 Yrs Free Electricity</span>
+                  </div>
+                </div>
+
+                <div class="lifetime-savings-card">
+                  <div class="l-left">
+                    <span class="l-label">25-Year Lifetime Savings</span>
+                    <span class="l-val text-gold" id="out-lifetime-savings">₹16,20,000</span>
+                  </div>
+                  <div class="l-right">
+                    <span class="l-label">CO2 Carbon Offset</span>
+                    <span class="l-val text-green" id="out-trees">84 Trees / Yr</span>
+                  </div>
+                </div>
+
+                <div class="calc-action-buttons">
+                  <button class="btn btn-primary btn-block shadow-glow" onclick="triggerProposalModal()">
+                    <i class="fa-solid fa-file-pdf"></i> Get Detailed Proposal & Site Survey
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US (TESLA / STRIPE STYLE GLASS CARDS) -->
+      <section class="section" id="why-us">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-award"></i> The Solaria Edge</span>
+            <h2 class="section-title">Why India's Top Homeowners & Industrialists Trust Solaria</h2>
+            <p class="section-subtitle">We build solar infrastructure designed to perform reliably for over 30 years with zero degradation compromises.</p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card glass-card">
+              <div class="feature-icon icon-gold"><i class="fa-solid fa-solar-panel"></i></div>
+              <h3 class="feature-title">Tier-1 N-Type TOPCon Panels</h3>
+              <p class="feature-desc">Utilizing next-gen N-Type cells with 22.8% efficiency, superior low-light performance, and lowest thermal coefficient (-0.30%/°C).</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check text-gold"></i> 30-Year Linear Performance Warranty</li>
+                <li><i class="fa-solid fa-check text-gold"></i> Bifacial Glass-to-Glass Options</li>
+              </ul>
+            </div>
+
+            <div class="feature-card glass-card">
+              <div class="feature-icon icon-green"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <h3 class="feature-title">End-To-End PM Subsidy Guarantee</h3>
+              <p class="feature-desc">We handle 100% of the government paperwork, TANGEDCO net-metering approvals, DISCOM inspection, and direct bank subsidy claim.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check text-green"></i> 100% Approval Tracking</li>
+                <li><i class="fa-solid fa-check text-green"></i> Fast 14-Day Commissioning</li>
+              </ul>
+            </div>
+
+            <div class="feature-card glass-card">
+              <div class="feature-icon icon-cyan"><i class="fa-solid fa-tower-cell"></i></div>
+              <h3 class="feature-title">AI Smart IoT Mobile Telemetry</h3>
+              <p class="feature-desc">Track live generation, battery storage levels, carbon offset, and bill savings 24/7 from our iOS and Android Customer Mobile App.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check text-cyan"></i> Live kW Generation Alerts</li>
+                <li><i class="fa-solid fa-check text-cyan"></i> Predictive Maintenance AI</li>
+              </ul>
+            </div>
+
+            <div class="feature-card glass-card">
+              <div class="feature-icon icon-purple"><i class="fa-solid fa-piggy-bank"></i></div>
+              <h3 class="feature-title">0% Interest Solar Financing</h3>
+              <p class="feature-desc">Zero down payment options through official partnerships with SBI, Tata Capital, HDFC Bank, and SIDBI green energy loans.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check text-gold"></i> EMIs starting at just ₹2,899/month</li>
+                <li><i class="fa-solid fa-check text-gold"></i> Instant Loan Sanction in 2 Hours</li>
+              </ul>
+            </div>
+
+            <div class="feature-card glass-card">
+              <div class="feature-icon icon-gold"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3 class="feature-title">Cyclone-Resistant Mounting Structures</h3>
+              <p class="feature-desc">Hot-dip galvanized iron structures designed to withstand wind speeds up to 170 km/h with high-grade SS304 anti-rust fasteners.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check text-gold"></i> Elevated High-Rise Roof Kits</li>
+                <li><i class="fa-solid fa-check text-gold"></i> Zero Waterproof Damage Drilling</li>
+              </ul>
+            </div>
+
+            <div class="feature-card glass-card">
+              <div class="feature-icon icon-green"><i class="fa-solid fa-headset"></i></div>
+              <h3 class="feature-title">24/7 Rapid Solar Care Response</h3>
+              <p class="feature-desc">Dedicated solar engineers stationed across Coimbatore, Chennai, Salem, and Madurai for 4-hour emergency site support visits.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check text-green"></i> Annual Complimentary Panel Cleaning</li>
+                <li><i class="fa-solid fa-check text-green"></i> 5-Year Free Maintenance Contract</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES OVERVIEW SECTION -->
+      <section class="section bg-darker" id="services">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-gears"></i> Comprehensive Solutions</span>
+            <h2 class="section-title">End-To-End Solar EPC Services</h2>
+            <p class="section-subtitle">Tailored solar energy solutions across residential, commercial, industrial, and agricultural sectors.</p>
+          </div>
+
+          <div class="services-tabs">
+            <button class="tab-btn active" onclick="openSolutionTab(event, 'tab-res')"><i class="fa-solid fa-house"></i> Residential Solar</button>
+            <button class="tab-btn" onclick="openSolutionTab(event, 'tab-com')"><i class="fa-solid fa-building"></i> Commercial & Industrial</button>
+            <button class="tab-btn" onclick="openSolutionTab(event, 'tab-agri')"><i class="fa-solid fa-wheat-awn"></i> Agricultural Solar Pumps</button>
+            <button class="tab-btn" onclick="openSolutionTab(event, 'tab-om')"><i class="fa-solid fa-wrench"></i> Solar O&M Services</button>
+          </div>
+
+          <!-- TAB CONTENT: RESIDENTIAL -->
+          <div id="tab-res" class="tab-content active">
+            <div class="solution-grid">
+              <div class="solution-card glass-panel">
+                <div class="sol-badge">Popular Choice</div>
+                <h3 class="sol-title">3 kW Smart Rooftop Solar</h3>
+                <div class="sol-price"><span class="price-val">₹1,96,000</span> <small>Before Subsidy</small></div>
+                <div class="sol-subsidy-highlight">
+                  <span>PM Subsidy Credit: <strong>-₹78,000</strong></span>
+                  <span class="sol-final">Effective Net Cost: <strong>₹1,18,000</strong></span>
+                </div>
+                <ul class="sol-features">
+                  <li><i class="fa-solid fa-check text-green"></i> Ideal for 2-3 BHK Homes (12-15 Units/Day)</li>
+                  <li><i class="fa-solid fa-check text-green"></i> 8 TOPCon High Efficiency Panels</li>
+                  <li><i class="fa-solid fa-check text-green"></i> Wi-Fi Smart String Inverter Included</li>
+                  <li><i class="fa-solid fa-check text-green"></i> TANGEDCO Bi-directional Metering</li>
+                </ul>
+                <button class="btn btn-primary btn-block" onclick="selectPackage('3kW Residential')">Select 3kW Plan</button>
+              </div>
+
+              <div class="solution-card glass-panel featured-sol">
+                <div class="sol-badge badge-gold">Best Value</div>
+                <h3 class="sol-title">5 kW Smart Rooftop Solar</h3>
+                <div class="sol-price"><span class="price-val">₹2,95,000</span> <small>Before Subsidy</small></div>
+                <div class="sol-subsidy-highlight">
+                  <span>PM Subsidy Credit: <strong>-₹78,000</strong></span>
+                  <span class="sol-final">Effective Net Cost: <strong>₹2,17,000</strong></span>
+                </div>
+                <ul class="sol-features">
+                  <li><i class="fa-solid fa-check text-gold"></i> Ideal for 3-4 BHK Homes with Air Conditioners</li>
+                  <li><i class="fa-solid fa-check text-gold"></i> 20-25 Units Daily Energy Harvest</li>
+                  <li><i class="fa-solid fa-check text-gold"></i> Hybrid Inverter & Battery Ready</li>
+                  <li><i class="fa-solid fa-check text-gold"></i> 5-Year Comprehensive Maintenance</li>
+                </ul>
+                <button class="btn btn-primary btn-block shadow-glow" onclick="selectPackage('5kW Residential')">Select 5kW Plan</button>
+              </div>
+
+              <div class="solution-card glass-panel">
+                <div class="sol-badge">Premium Villa</div>
+                <h3 class="sol-title">10 kW Ultra Solar System</h3>
+                <div class="sol-price"><span class="price-val">₹5,40,000</span> <small>Before Subsidy</small></div>
+                <div class="sol-subsidy-highlight">
+                  <span>PM Subsidy Credit: <strong>-₹78,000</strong></span>
+                  <span class="sol-final">Effective Net Cost: <strong>₹4,62,000</strong></span>
+                </div>
+                <ul class="sol-features">
+                  <li><i class="fa-solid fa-check text-cyan"></i> Ideal for Luxury Villas, EV Charger & Pool Pumps</li>
+                  <li><i class="fa-solid fa-check text-cyan"></i> 40-50 Units Daily Energy Harvest</li>
+                  <li><i class="fa-solid fa-check text-cyan"></i> Three-Phase Smart Solar Inverter</li>
+                  <li><i class="fa-solid fa-check text-cyan"></i> Premium Glass-to-Glass Bifacial Panels</li>
+                </ul>
+                <button class="btn btn-primary btn-block" onclick="selectPackage('10kW Villa Solar')">Select 10kW Plan</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB CONTENT: COMMERCIAL -->
+          <div id="tab-com" class="tab-content">
+            <div class="commercial-banner glass-panel">
+              <div class="com-content">
+                <span class="section-badge"><i class="fa-solid fa-industry"></i> Commercial & Industrial Solar EPC</span>
+                <h3>Slash Your Factory Electricity Bills By Up To 80%</h3>
+                <p>Designed for Textile Mills, Manufacturing Plants, Educational Institutions, and Commercial Real Estate in Coimbatore, Tirupur, and Pan-India.</p>
+                <div class="com-highlights-grid">
+                  <div class="com-box">
+                    <i class="fa-solid fa-chart-line text-gold"></i>
+                    <strong>Accelerated Depreciation</strong>
+                    <span>40% tax benefit in Year 1 under Income Tax Act</span>
+                  </div>
+                  <div class="com-box">
+                    <i class="fa-solid fa-handshake text-green"></i>
+                    <strong>OPEX / PPA Model</strong>
+                    <span>Zero upfront CAPEX. Pay only for solar power generated at ₹3.80/unit</span>
+                  </div>
+                  <div class="com-box">
+                    <i class="fa-solid fa-shield-cat text-cyan"></i>
+                    <strong>Grid Open Access</strong>
+                    <span>Wheeling & Banking solar power across multi-location factories</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-lg margin-top-md" onclick="switchView('contact-view')">Request Commercial Solar Feasibility Study</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB CONTENT: AGRICULTURAL -->
+          <div id="tab-agri" class="tab-content">
+            <div class="agricultural-card glass-panel">
+              <div class="agri-grid">
+                <div class="agri-info">
+                  <span class="section-badge"><i class="fa-solid fa-seedling"></i> PM-KUSUM Scheme</span>
+                  <h3>Solar Water Pumping Systems For Farmers</h3>
+                  <p>Reliable 100% daylight irrigation solar pumping solutions. Get up to 90% total subsidy combining Central & State government schemes.</p>
+                  <ul class="agri-list">
+                    <li><i class="fa-solid fa-circle-check text-green"></i> Available in 3 HP, 5 HP, 7.5 HP & 10 HP AC/DC Submersible Pumps</li>
+                    <li><i class="fa-solid fa-circle-check text-green"></i> Automatic MPPT Solar Pump Controller</li>
+                    <li><i class="fa-solid fa-circle-check text-green"></i> Zero grid reliance – uninterrupted daytime water supply</li>
+                  </ul>
+                  <button class="btn btn-primary" onclick="scrollToSection('contact')">Inquire PM-KUSUM Subsidy</button>
+                </div>
+                <div class="agri-stat-box">
+                  <div class="stat-big text-gold">90%</div>
+                  <div class="stat-desc">Total Government Subsidy for Eligible Farmers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB CONTENT: O&M -->
+          <div id="tab-om" class="tab-content">
+            <div class="om-grid glass-panel">
+              <div class="om-item">
+                <i class="fa-solid fa-broom text-gold"></i>
+                <h4>Robotized Panel Cleaning</h4>
+                <p>Automated wet and dry robotic panel cleaning to prevent dust accretion and maintain 99%+ generation yield.</p>
+              </div>
+              <div class="om-item">
+                <i class="fa-solid fa-temperature-arrow-up text-green"></i>
+                <h4>Thermal Imaging Audits</h4>
+                <p>Drone IR thermography to detect micro-cracks, hot spots, and string bypass failures before damage occurs.</p>
+              </div>
+              <div class="om-item">
+                <i class="fa-solid fa-plug-circle-check text-cyan"></i>
+                <h4>Inverter Health Monitoring</h4>
+                <p>24/7 remote firmware diagnostic support and preventative capacitor replacement schedules.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PM SURYA GHAR & FINANCING SECTION -->
+      <section class="section" id="subsidy">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-landmark"></i> Government Subsidies & Financing</span>
+            <h2 class="section-title">PM Surya Ghar Muft Bijli Yojana Breakdown</h2>
+            <p class="section-subtitle">Official Direct Benefit Transfer (DBT) subsidy structure for Indian residential rooftops.</p>
+          </div>
+
+          <div class="subsidy-table-container glass-panel">
+            <table class="subsidy-table">
+              <thead>
+                <tr>
+                  <th>System Capacity</th>
+                  <th>Total Estimated Cost</th>
+                  <th>Central Govt Subsidy (DBT)</th>
+                  <th>Effective Net Customer Cost</th>
+                  <th>Monthly EMI (0% Scheme)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1 kW System</strong></td>
+                  <td>₹75,000</td>
+                  <td><span class="badge-green">₹30,000</span></td>
+                  <td><strong>₹45,000</strong></td>
+                  <td>₹1,499 / mo</td>
+                </tr>
+                <tr>
+                  <td><strong>2 kW System</strong></td>
+                  <td>₹1,40,000</td>
+                  <td><span class="badge-green">₹60,000</span></td>
+                  <td><strong>₹80,000</strong></td>
+                  <td>₹2,599 / mo</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>3 kW System (Recommended)</strong></td>
+                  <td>₹1,96,000</td>
+                  <td><span class="badge-gold">₹78,000 (Max)</span></td>
+                  <td><strong class="text-gold">₹1,18,000</strong></td>
+                  <td>₹3,799 / mo</td>
+                </tr>
+                <tr>
+                  <td><strong>5 kW System</strong></td>
+                  <td>₹2,95,000</td>
+                  <td><span class="badge-green">₹78,000</span></td>
+                  <td><strong>₹2,17,000</strong></td>
+                  <td>₹6,499 / mo</td>
+                </tr>
+                <tr>
+                  <td><strong>10 kW System</strong></td>
+                  <td>₹5,40,000</td>
+                  <td><span class="badge-green">₹78,000</span></td>
+                  <td><strong>₹4,62,000</strong></td>
+                  <td>₹13,999 / mo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Financing Partners Logos -->
+          <div class="financing-partners text-center margin-top-lg">
+            <span class="partners-title">Official Green Financing & Banking Partners</span>
+            <div class="partners-logos">
+              <div class="partner-card"><i class="fa-solid fa-building-columns"></i> State Bank of India (Surya Ghar Loan)</div>
+              <div class="partner-card"><i class="fa-solid fa-hand-holding-hand"></i> Tata Capital Green Finance</div>
+              <div class="partner-card"><i class="fa-solid fa-shield"></i> HDFC Green Solar Loan</div>
+              <div class="partner-card"><i class="fa-solid fa-leaf"></i> SIDBI Green Energy</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT PORTFOLIO SHOWCASE -->
+      <section class="section bg-darker" id="portfolio">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-images"></i> Proven Excellence</span>
+            <h2 class="section-title">Solaria Project Portfolio</h2>
+            <p class="section-subtitle">Explore 500+ commissioned solar installations across Tamil Nadu and Pan-India.</p>
+          </div>
+
+          <div class="portfolio-filter-buttons text-center">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="res">Residential</button>
+            <button class="filter-btn" data-filter="com">Commercial & Textile</button>
+            <button class="filter-btn" data-filter="agri">Agricultural</button>
+          </div>
+
+          <div class="portfolio-grid">
+            
+            <div class="portfolio-card glass-card" data-category="com">
+              <div class="portfolio-img-box">
+                <div class="portfolio-placeholder img-com-1">
+                  <div class="placeholder-overlay">
+                    <span class="port-tag">1.2 MW Industrial</span>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>KPR Textile Mills Rooftop</h4>
+                <p class="port-loc"><i class="fa-solid fa-location-dot text-gold"></i> Avinashi Road, Coimbatore</p>
+                <div class="port-stats">
+                  <span><strong>System:</strong> 1.2 MW TOPCon</span>
+                  <span><strong>Savings:</strong> ₹1.4 Cr/yr</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card glass-card" data-category="res">
+              <div class="portfolio-img-box">
+                <div class="portfolio-placeholder img-res-1">
+                  <div class="placeholder-overlay">
+                    <span class="port-tag">10 kW Villa Solar</span>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>Luxury Residence at Race Course</h4>
+                <p class="port-loc"><i class="fa-solid fa-location-dot text-gold"></i> Race Course, Coimbatore</p>
+                <div class="port-stats">
+                  <span><strong>System:</strong> 10 kW Hybrid</span>
+                  <span><strong>Savings:</strong> ₹1.6 Lakh/yr</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card glass-card" data-category="com">
+              <div class="portfolio-img-box">
+                <div class="portfolio-placeholder img-com-2">
+                  <div class="placeholder-overlay">
+                    <span class="port-tag">450 kW Commercial</span>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>PSG Tech Innovation Campus</h4>
+                <p class="port-loc"><i class="fa-solid fa-location-dot text-gold"></i> Peelamedu, Coimbatore</p>
+                <div class="port-stats">
+                  <span><strong>System:</strong> 450 kW Grid-Tied</span>
+                  <span><strong>Savings:</strong> ₹58 Lakh/yr</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card glass-card" data-category="agri">
+              <div class="portfolio-img-box">
+                <div class="portfolio-placeholder img-agri-1">
+                  <div class="placeholder-overlay">
+                    <span class="port-tag">7.5 HP Solar Pump</span>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>Coconut Plantation Farms</h4>
+                <p class="port-loc"><i class="fa-solid fa-location-dot text-gold"></i> Pollachi, Tamil Nadu</p>
+                <div class="port-stats">
+                  <span><strong>System:</strong> 7.5 HP MPPT Pump</span>
+                  <span><strong>Subsidy:</strong> 90% PM-KUSUM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card glass-card" data-category="res">
+              <div class="portfolio-img-box">
+                <div class="portfolio-placeholder img-res-2">
+                  <div class="placeholder-overlay">
+                    <span class="port-tag">5 kW Rooftop</span>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>Smart Green Home</h4>
+                <p class="port-loc"><i class="fa-solid fa-location-dot text-gold"></i> Anna Nagar, Chennai</p>
+                <div class="port-stats">
+                  <span><strong>System:</strong> 5 kW TOPCon</span>
+                  <span><strong>Subsidy:</strong> ₹78,000 Recd</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card glass-card" data-category="com">
+              <div class="portfolio-img-box">
+                <div class="portfolio-placeholder img-com-3">
+                  <div class="placeholder-overlay">
+                    <span class="port-tag">2.5 MW Ground Mount</span>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>Salem Steel Ancillary Plant</h4>
+                <p class="port-loc"><i class="fa-solid fa-location-dot text-gold"></i> Salem Industrial Belt</p>
+                <div class="port-stats">
+                  <span><strong>System:</strong> 2.5 MW Ground Solar</span>
+                  <span><strong>Savings:</strong> ₹2.8 Cr/yr</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE INSTALLATION MAP -->
+      <section class="section" id="map-section">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-map-location-dot"></i> Live Footprint</span>
+            <h2 class="section-title">Interactive Installation Map: Tamil Nadu & Pan-India</h2>
+            <p class="section-subtitle">Click on any region pin to view real-time live generation metrics and featured installations.</p>
+          </div>
+
+          <div class="map-container glass-panel">
+            <div class="map-graphic-box">
+              <div class="map-svg-mockup">
+                <!-- Interactive Pin Hotspots -->
+                <div class="map-pin pin-coimbatore active" onclick="selectMapPin('coimbatore')">
+                  <div class="pin-pulse"></div>
+                  <div class="pin-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                  <span class="pin-label">Coimbatore HQ (240 MW)</span>
+                </div>
+
+                <div class="map-pin pin-chennai" onclick="selectMapPin('chennai')">
+                  <div class="pin-pulse"></div>
+                  <div class="pin-icon"><i class="fa-solid fa-city"></i></div>
+                  <span class="pin-label">Chennai Hub (120 MW)</span>
+                </div>
+
+                <div class="map-pin pin-madurai" onclick="selectMapPin('madurai')">
+                  <div class="pin-pulse"></div>
+                  <div class="pin-icon"><i class="fa-solid fa-sun"></i></div>
+                  <span class="pin-label">Madurai Hub (85 MW)</span>
+                </div>
+
+                <div class="map-pin pin-salem" onclick="selectMapPin('salem')">
+                  <div class="pin-pulse"></div>
+                  <div class="pin-icon"><i class="fa-solid fa-industry"></i></div>
+                  <span class="pin-label">Salem / Erode (95 MW)</span>
+                </div>
+
+                <div class="map-pin pin-bengaluru" onclick="selectMapPin('bengaluru')">
+                  <div class="pin-pulse"></div>
+                  <div class="pin-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <span class="pin-label">Bengaluru (60 MW)</span>
+                </div>
+              </div>
+
+              <!-- Map Dynamic Pin Info Display Box -->
+              <div class="map-info-card glass-card" id="map-info-card">
+                <div class="map-info-header">
+                  <h4 id="pin-city-name" class="text-gold">Coimbatore Regional Hub</h4>
+                  <span class="badge-status">Active Operations</span>
+                </div>
+                <div class="map-info-body">
+                  <div class="info-metric-row">
+                    <span>Total Installations:</span>
+                    <strong id="pin-install-count">6,420+ Roofs</strong>
+                  </div>
+                  <div class="info-metric-row">
+                    <span>Capacity Installed:</span>
+                    <strong id="pin-capacity">240.5 MW</strong>
+                  </div>
+                  <div class="info-metric-row">
+                    <span>Avg Grid Reduction:</span>
+                    <strong id="pin-reduction" class="text-green">94.8%</strong>
+                  </div>
+                  <div class="featured-case">
+                    <span>Featured Landmark:</span>
+                    <p id="pin-landmark">KPR Textile Park & 4,200 Residential Rooftops in Peelamedu & Avinashi Road.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOMER TESTIMONIALS -->
+      <section class="section bg-darker" id="testimonials">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-quote-left"></i> Verified Stories</span>
+            <h2 class="section-title">What Solar Owners Say About Solaria</h2>
+            <p class="section-subtitle">Real experiences from homeowners, textile factory owners, and agriculturalists.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            
+            <div class="testimonial-card glass-card">
+              <div class="stars text-gold">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="t-text">"Switching to Solaria's 5kW TOPCon rooftop solar system reduced my monthly TANGEDCO bill from ₹7,800 to just ₹340 minimum fixed charge! Solaria handled the ₹78,000 PM Surya Ghar subsidy approval effortlessly into my bank account in 18 days."</p>
+              <div class="t-author">
+                <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+                <div class="author-info">
+                  <strong>Dr. S. Ranganathan</strong>
+                  <span>Homeowner, Race Course, Coimbatore</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass-card">
+              <div class="stars text-gold">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="t-text">"As a textile mill owner in Tirupur, power costs were destroying our margins. Solaria engineered a 1.2 MW rooftop solar plant. Our payback was achieved in just 2.4 years thanks to 40% Accelerated Depreciation and zero grid breakdowns."</p>
+              <div class="t-author">
+                <div class="author-avatar"><i class="fa-solid fa-building-user"></i></div>
+                <div class="author-info">
+                  <strong>K. Vijayakumar</strong>
+                  <span>Managing Director, AeroTex Fabrics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass-card">
+              <div class="stars text-gold">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="t-text">"The 7.5 HP Solar Pump system under PM-KUSUM gives me continuous 10-hour daytime water supply for my coconut grove. Solaria's installation team in Pollachi was top tier."</p>
+              <div class="t-author">
+                <div class="author-avatar"><i class="fa-solid fa-tractor"></i></div>
+                <div class="author-info">
+                  <strong>M. Chinnasamy</strong>
+                  <span>Organic Farmer, Pollachi, TN</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS SECTION -->
+      <section class="section" id="certifications">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-certificate"></i> Standards & Quality</span>
+            <h2 class="section-title">Industry Standard Certifications</h2>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-box glass-card">
+              <i class="fa-solid fa-shield-halved text-gold"></i>
+              <h4>MNRE Approved</h4>
+              <p>Ministry of New & Renewable Energy Channel Partner</p>
+            </div>
+            <div class="cert-box glass-card">
+              <i class="fa-solid fa-square-check text-green"></i>
+              <h4>ISO 9001:2015</h4>
+              <p>Certified Quality Management Systems</p>
+            </div>
+            <div class="cert-box glass-card">
+              <i class="fa-solid fa-solar-panel text-cyan"></i>
+              <h4>BIS Certified</h4>
+              <p>Bureau of Indian Standards PV Module Approval</p>
+            </div>
+            <div class="cert-box glass-card">
+              <i class="fa-solid fa-globe text-purple"></i>
+              <h4>TÜV Rheinland</h4>
+              <p>International Solar Performance Certification</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION (SCHEMA.ORG COMPLIANT ACCORDION) -->
+      <section class="section bg-darker" id="faq">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about rooftop solar, net-metering, and government subsidies.</p>
+          </div>
+
+          <div class="faq-container glass-panel">
+            
+            <div class="faq-item active">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>How much subsidy do I get under PM Surya Ghar Muft Bijli Yojana?</span>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>For residential rooftops, the Central Government provides <strong>₹30,000 per kW for up to 2 kW</strong> systems and <strong>₹18,000 per kW for the 3rd kW</strong>. The maximum direct subsidy is capped at <strong>₹78,000</strong> for 3 kW and higher systems. Solaria Energy handles the entire registration and direct bank transfer process for you.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>How does net-metering work with TANGEDCO in Tamil Nadu?</span>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Net-metering allows excess solar power produced by your rooftop panels during peak daylight hours to be exported back into the TANGEDCO electrical grid. Your bi-monthly electricity bill is calculated based on the net difference (Units Consumed minus Units Exported). If export exceeds import, credit units roll forward into subsequent billing cycles.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>What is the warranty period for Solaria Solar Panels & Inverters?</span>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Solaria installs Tier-1 N-Type TOPCon solar panels backed by a <strong>12-Year Product Warranty</strong> and a <strong>30-Year Linear Power Output Warranty</strong> (guaranteeing over 87.4% generation performance at Year 30). Inverters come with a standard 5-to-10 Year replacement warranty.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Do solar panels generate electricity on rainy or cloudy days?</span>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Yes! N-Type TOPCon solar panels continue to generate electricity even during overcast weather by absorbing diffuse solar radiation. While output on heavily cloudy days may range between 25% to 60% of peak capacity, your grid net-metering balance ensures uninterrupted power supply.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>What roof area is required for a 3 kW solar system?</span>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>A standard 3 kW residential rooftop solar installation requires approximately <strong>250 to 300 sq. ft</strong> of unshaded roof space. Solaria offers elevated high-rise mounting structures if you wish to retain your roof space for leisure or garden use.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- LEAD CAPTURE FORM SECTION -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-card glass-panel">
+            <div class="contact-grid">
+              
+              <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-paper-plane"></i> Instant Booking</span>
+                <h2>Schedule Your Free Engineering Rooftop Survey</h2>
+                <p>Our certified solar engineers will conduct an on-site shadow analysis, structural check, and provide an accurate financial proposal within 2 hours.</p>
+
+                <div class="info-contacts-list">
+                  <div class="info-item">
+                    <i class="fa-solid fa-location-dot text-gold"></i>
+                    <div>
+                      <strong>Headquarters & Experience Center</strong>
+                      <p>Solaria Green Park, Avinashi Road, Peelamedu, Coimbatore, TN - 641004</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item">
+                    <i class="fa-solid fa-phone text-green"></i>
+                    <div>
+                      <strong>Toll-Free Solar Helpline</strong>
+                      <p>+91 422 7100 SOLAR (76527) | +91 98422 10101</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item">
+                    <i class="fa-solid fa-envelope text-cyan"></i>
+                    <div>
+                      <strong>Email Audit Desk</strong>
+                      <p>surveys@solaria-energy.in | b2b@solaria-energy.in</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lead Capture Form -->
+              <form class="lead-form" id="lead-form" onsubmit="handleLeadSubmit(event)">
+                <h3 class="form-title">Get Free Solar Assessment</h3>
+                
+                <div class="form-group">
+                  <label for="lead-name">Full Name *</label>
+                  <input type="text" id="lead-name" class="form-control" placeholder="e.g. Anand Ramakrishnan" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="lead-phone">Mobile Number *</label>
+                    <input type="tel" id="lead-phone" class="form-control" placeholder="e.g. 98422 00000" pattern="[0-9]{10}" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="lead-pincode">Pincode / City *</label>
+                    <input type="text" id="lead-pincode" class="form-control" placeholder="e.g. 641004 / Coimbatore" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="lead-bill">Monthly Electricity Bill</label>
+                    <select id="lead-bill" class="form-control">
+                      <option value="1500-3000">₹1,500 - ₹3,000 / month</option>
+                      <option value="3000-6000" selected>₹3,000 - ₹6,000 / month</option>
+                      <option value="6000-15000">₹6,000 - ₹15,000 / month</option>
+                      <option value="15000+">Above ₹15,000 / month (Commercial)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="lead-type">Property Type</label>
+                    <select id="lead-type" class="form-control">
+                      <option value="Independent House">Independent House</option>
+                      <option value="Villa">Villa / Gated Community</option>
+                      <option value="Factory / Mill">Factory / Textile Mill</option>
+                      <option value="Commercial Building">Commercial Building</option>
+                      <option value="Farm / Agri">Farm / Agriculture</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg shadow-glow">
+                  <i class="fa-solid fa-solar-panel"></i> Unlock Instant AI Feasibility & Call Back
+                </button>
+                <p class="form-privacy"><i class="fa-solid fa-lock text-gold"></i> 100% Privacy Protected. No Spam Guarantee.</p>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- ==================== END HOME VIEW ==================== -->
+
+    <!-- ==================== ABOUT US VIEW ==================== -->
+    <div id="about-view" class="view-page container">
+      <div class="page-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-building"></i> Company Overview</span>
+        <h1>About Solaria Energy India</h1>
+        <p class="section-subtitle">Pioneering Smart Solar Infrastructure & Renewable Transformation across South India & Beyond.</p>
+      </div>
+
+      <div class="about-grid glass-panel">
+        <div class="about-text">
+          <h3>Pioneering Clean Energy Since 2014</h3>
+          <p>Solaria Energy is a Tier-1 MNRE-approved Solar EPC (Engineering, Procurement, and Construction) company headquartered in Coimbatore, Tamil Nadu. Competing directly with industry giants like Tata Power Solar, Adani, and Waaree, Solaria distinguishes itself through <strong>Tesla-inspired IoT smart monitoring, ultra-efficient N-Type TOPCon panel technology, and 100% automated government subsidy processing</strong>.</p>
+          
+          <div class="about-milestones">
+            <div class="m-card">
+              <span class="m-num text-gold">500+ MW</span>
+              <span class="m-lbl">Turnkey Installations</span>
+            </div>
+            <div class="m-card">
+              <span class="m-num text-green">14,000+</span>
+              <span class="m-lbl">Rooftop Customers</span>
+            </div>
+            <div class="m-card">
+              <span class="m-num text-cyan">99.4%</span>
+              <span class="m-lbl">Grid System Uptime</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center margin-top-lg">
+        <button class="btn btn-primary" onclick="switchView('home-view')"><i class="fa-solid fa-arrow-left"></i> Back To Homepage</button>
+      </div>
+    </div>
+
+    <!-- ==================== ADVANCED CALCULATOR VIEW ==================== -->
+    <div id="calculator-view" class="view-page container">
+      <div class="page-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-calculator"></i> Full Financial Modeler</span>
+        <h1>Full-Page Solar Loan EMI & Subsidy Calculator</h1>
+        <p class="section-subtitle">Simulate cash flow, tax depreciation, SBI solar loan EMIs, and 25-year returns.</p>
+      </div>
+
+      <div class="glass-panel text-center padding-lg">
+        <h3>Launch Full AI Modeler Engine</h3>
+        <p>Return to the main live calculator on the home tab for immediate real-time calculations.</p>
+        <button class="btn btn-primary" onclick="switchView('home-view'); scrollToSection('calculator')">Go To Live Calculator</button>
+      </div>
+    </div>
+
+    <!-- ==================== PROJECTS VIEW ==================== -->
+    <div id="projects-view" class="view-page container">
+      <div class="page-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-folder-open"></i> Full Portfolio</span>
+        <h1>Featured Case Studies & Project Showcase</h1>
+        <p class="section-subtitle">Detailed engineering blueprints and real-world performance results.</p>
+      </div>
+      <div class="glass-panel padding-lg">
+        <h3>Featured Case Study: 1.2 MW KPR Textile Mill Rooftop Solarization</h3>
+        <p><strong>Location:</strong> Avinashi Road, Coimbatore | <strong>System Size:</strong> 1.2 MW TOPCon Bifacial | <strong>Annual Yield:</strong> 17,20,000 kWh</p>
+        <p><strong>Result:</strong> Reduced annual power bill by ₹1.41 Crores. Payback achieved in 26 months under Accelerated Depreciation tax benefits.</p>
+      </div>
+      <div class="text-center margin-top-lg">
+        <button class="btn btn-primary" onclick="switchView('home-view')"><i class="fa-solid fa-arrow-left"></i> Back To Main Site</button>
+      </div>
+    </div>
+
+    <!-- ==================== ADMIN PANEL DASHBOARD PREVIEW ==================== -->
+    <div id="admin-view" class="view-page container">
+      <div class="page-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-gauge-high"></i> Enterprise Module</span>
+        <h1>Solaria Admin & CRM Portal Concept</h1>
+        <p class="section-subtitle">Real-time Lead Pipeline, Installation Progress, and Service Ticket Tracking.</p>
+      </div>
+
+      <div class="admin-dashboard-frame glass-panel">
+        
+        <div class="admin-header-bar">
+          <div class="admin-user"><i class="fa-solid fa-circle-user text-gold"></i> <strong>Admin Ops:</strong> Coimbatore Regional Hub</div>
+          <div class="admin-status"><span class="badge-status">System Operational</span></div>
+        </div>
+
+        <div class="admin-stats-cards">
+          <div class="a-stat">
+            <span class="a-label">Active Leads Today</span>
+            <span class="a-val text-gold">48</span>
+          </div>
+          <div class="a-stat">
+            <span class="a-label">Pending Site Surveys</span>
+            <span class="a-val text-green">14</span>
+          </div>
+          <div class="a-stat">
+            <span class="a-label">PM Subsidies Disbursed</span>
+            <span class="a-val text-cyan">₹1.42 Cr</span>
+          </div>
+          <div class="a-stat">
+            <span class="a-label">Projects in Commissioning</span>
+            <span class="a-val">22 Sites</span>
+          </div>
+        </div>
+
+        <div class="admin-table-box">
+          <h4>Recent High-Priority Leads (CRM)</h4>
+          <table class="subsidy-table admin-table">
+            <thead>
+              <tr>
+                <th>Lead ID</th>
+                <th>Customer Name</th>
+                <th>Location</th>
+                <th>System Req</th>
+                <th>Subsidy Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#SOL-8492</td>
+                <td>K. Anandakrishnan</td>
+                <td>Coimbatore (641004)</td>
+                <td>5 kW Rooftop</td>
+                <td><span class="badge-green">Subsidy Applied</span></td>
+                <td><button class="btn btn-sm btn-glass">Survey Assigned</button></td>
+              </tr>
+              <tr>
+                <td>#SOL-8493</td>
+                <td>Apex Spinning Mills</td>
+                <td>Tirupur Industrial</td>
+                <td>450 kW Industrial</td>
+                <td><span class="badge-gold">PPA Proposal Sent</span></td>
+                <td><button class="btn btn-sm btn-glass">View Proposal</button></td>
+              </tr>
+              <tr>
+                <td>#SOL-8494</td>
+                <td>R. Meenakshi</td>
+                <td>Madurai City</td>
+                <td>3 kW Residential</td>
+                <td><span class="badge-cyan">Site Survey Complete</span></td>
+                <td><button class="btn btn-sm btn-glass">Apply Subsidy</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <div class="text-center margin-top-lg">
+        <button class="btn btn-primary" onclick="switchView('home-view')"><i class="fa-solid fa-arrow-left"></i> Return To Main Website</button>
+      </div>
+    </div>
+
+    <!-- ==================== CUSTOMER MOBILE APP CONCEPT VIEW ==================== -->
+    <div id="app-view" class="view-page container">
+      <div class="page-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Telemetry</span>
+        <h1>Solaria Smart Customer Mobile App</h1>
+        <p class="section-subtitle">Live energy harvest monitoring, inverter diagnostics, and 1-click service requests.</p>
+      </div>
+
+      <div class="app-mockup-wrapper">
+        <div class="phone-frame shadow-glow">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <span>Solaria IoT Sync</span>
+              <i class="fa-solid fa-wifi text-green"></i>
+            </div>
+            <div class="app-body">
+              <div class="app-card">
+                <span class="app-tag">Live Today</span>
+                <h2>38.4 kWh</h2>
+                <p class="text-green">Generation Yield: 104% of Target</p>
+              </div>
+
+              <div class="app-meter-card">
+                <div class="a-metric">
+                  <span>Current Solar Output</span>
+                  <strong class="text-gold">4.8 kW</strong>
+                </div>
+                <div class="a-metric">
+                  <span>Grid Export (Net)</span>
+                  <strong class="text-cyan">3.1 kW</strong>
+                </div>
+              </div>
+
+              <div class="app-actions-grid">
+                <button class="app-btn"><i class="fa-solid fa-file-invoice text-gold"></i><br>View Bill Savings</button>
+                <button class="app-btn"><i class="fa-solid fa-screwdriver-wrench text-green"></i><br>Book Service</button>
+                <button class="app-btn"><i class="fa-solid fa-award text-cyan"></i><br>Warranty Card</button>
+                <button class="app-btn"><i class="fa-solid fa-headset text-purple"></i><br>AI Support</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center margin-top-lg">
+        <button class="btn btn-primary" onclick="switchView('home-view')"><i class="fa-solid fa-arrow-left"></i> Return To Main Website</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-brand">
+        <a href="#" class="brand-logo">
+          <div class="logo-icon"><i class="fa-solid fa-sun text-gold"></i></div>
+          <span class="logo-text">SOLARIA<span class="logo-highlight">ENERGY</span></span>
+        </a>
+        <p class="footer-desc">
+          India's premier Tier-1 Smart Solar EPC company. Delivering Tesla-grade solar rooftop systems, PM Surya Ghar subsidy management, and industrial PPA models across Tamil Nadu and Pan-India.
+        </p>
+        <div class="social-links">
+          <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#residential" onclick="switchView('home-view'); scrollToSection('residential')">Residential Solar Rooftops</a></li>
+          <li><a href="#commercial" onclick="switchView('home-view'); scrollToSection('commercial')">Commercial & Industrial Solar</a></li>
+          <li><a href="#agricultural" onclick="switchView('home-view'); scrollToSection('agricultural')">Agricultural Solar Water Pumps</a></li>
+          <li><a href="#subsidy" onclick="switchView('home-view'); scrollToSection('subsidy')">PM Surya Ghar Subsidy Guide</a></li>
+          <li><a href="#calculator" onclick="switchView('home-view'); scrollToSection('calculator')">AI Solar Savings Calculator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Key Cities Covered</h4>
+        <ul>
+          <li><a href="#" onclick="switchView('home-view')">Solar Company in Coimbatore</a></li>
+          <li><a href="#" onclick="switchView('home-view')">Solar Panel Installation Chennai</a></li>
+          <li><a href="#" onclick="switchView('home-view')">Rooftop Solar Madurai</a></li>
+          <li><a href="#" onclick="switchView('home-view')">Industrial Solar EPC Salem</a></li>
+          <li><a href="#" onclick="switchView('home-view')">Solar EPC Company Bengaluru</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact & Support</h4>
+        <p><i class="fa-solid fa-phone text-gold"></i> +91 422 7100 SOLAR</p>
+        <p><i class="fa-solid fa-envelope text-gold"></i> info@solaria-energy.in</p>
+        <p><i class="fa-solid fa-location-dot text-gold"></i> Solaria Green Park, Avinashi Road, Coimbatore - 641004</p>
+        <p class="margin-top-sm"><strong>MNRE Channel Partner</strong> | ISO 9001:2015</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <div class="container copyright-content">
+        <p>&copy; 2026 Solaria Energy India Private Limited. All Rights Reserved. Designed for Modern Solar Leadership.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING AI ASSISTANT CHATBOT WIDGET -->
+  <div class="ai-chatbot-wrapper" id="ai-chatbot">
+    <button class="ai-chat-trigger shadow-glow" onclick="toggleChatbot()" id="chat-trigger-btn">
+      <i class="fa-solid fa-robot"></i>
+      <span class="chat-badge">AI Online</span>
+    </button>
+
+    <div class="chat-window glass-panel" id="chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <i class="fa-solid fa-robot text-gold"></i>
+          <div>
+            <strong>Solaria AI Solar Assistant</strong>
+            <small>Instant Roof & Subsidy Advisor</small>
+          </div>
+        </div>
+        <button class="chat-close-btn" onclick="toggleChatbot()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="chat-body" id="chat-messages">
+        <div class="chat-msg bot-msg">
+          Hello! 👋 I'm Solaria's AI Assistant. How can I help you save on electricity today?
+        </div>
+      </div>
+
+      <div class="chat-quick-options">
+        <button onclick="sendQuickChat('Calculate my PM Surya Ghar Subsidy')">💰 Calculate Subsidy</button>
+        <button onclick="sendQuickChat('What is the cost for a 3kW system?')">⚡ 3kW Solar Cost</button>
+        <button onclick="sendQuickChat('Book a free site survey in Coimbatore')">📅 Free Site Survey</button>
+      </div>
+
+      <div class="chat-footer">
+        <input type="text" id="chat-input" placeholder="Type your solar query..." onkeypress="handleChatKeyPress(event)">
+        <button onclick="sendChatMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTANT AI PROPOSAL & FEASIBILITY MODAL -->
+  <div class="modal-backdrop" id="proposal-modal">
+    <div class="modal-card glass-panel">
+      <button class="modal-close" onclick="closeProposalModal()"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="modal-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-file-contract"></i> AI Financial Feasibility Report</span>
+        <h3 class="text-gold">Your Customized Solar Proposal Summary</h3>
+        <p>Generated based on your electricity parameters</p>
+      </div>
+
+      <div class="modal-body" id="modal-report-content">
+        <!-- Dynamic content filled via JS -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-block" onclick="submitModalSurvey()">Confirm Free On-Site Inspection</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

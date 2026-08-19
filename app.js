@@ -336,15 +336,55 @@ function submitModalSurvey() {
 }
 
 /* --------------------------------------------------------------------------
-   10. LEAD FORM HANDLER & PACKAGE SELECTION
+   10. LEAD FORM HANDLER & STORAGE LOGIC
    -------------------------------------------------------------------------- */
 function handleLeadSubmit(e) {
   e.preventDefault();
   const name = document.getElementById('lead-name').value;
   const phone = document.getElementById('lead-phone').value;
+  const pincode = document.getElementById('lead-pincode').value;
+  const bill = document.getElementById('lead-bill').value;
+  const propType = document.getElementById('lead-type').value;
 
-  alert(`Thank you, ${name}! Your free engineering solar site survey has been scheduled. Our Coimbatore technical consultant will call you at ${phone} within 2 hours.`);
+  const leadId = '#SOL-' + Math.floor(1000 + Math.random() * 9000);
+  const newLead = {
+    id: leadId,
+    name: name,
+    phone: phone,
+    location: pincode,
+    bill: bill,
+    propertyType: propType,
+    date: new Date().toLocaleDateString(),
+    status: 'New Assessment Lead'
+  };
+
+  // Save lead in localStorage database
+  const existingLeads = JSON.parse(localStorage.getItem('solaria_leads') || '[]');
+  existingLeads.unshift(newLead);
+  localStorage.setItem('solaria_leads', JSON.stringify(existingLeads));
+
+  // Render lead into Admin CRM Portal table dynamically
+  renderLeadInAdminTable(newLead);
+
+  alert(`✅ Assessment Booked!\nThank you, ${name}.\nYour Lead ID is ${leadId}.\nSaved locally in Solaria CRM Database & Admin Portal.\nOur Coimbatore engineering team will call you at ${phone} within 2 hours.`);
   document.getElementById('lead-form').reset();
+}
+
+function renderLeadInAdminTable(lead) {
+  const tbody = document.querySelector('.admin-table tbody');
+  if (tbody) {
+    const row = document.createElement('tr');
+    row.style.background = 'rgba(255,183,3,0.15)';
+    row.innerHTML = `
+      <td><strong>${lead.id}</strong></td>
+      <td>${lead.name}</td>
+      <td>${lead.location}</td>
+      <td>${lead.propertyType} (${lead.bill})</td>
+      <td><span class="badge-gold">Live Lead Received</span></td>
+      <td><button class="btn btn-sm btn-primary" onclick="alert('Contacting ${lead.phone}...')">Call Lead</button></td>
+    `;
+    tbody.insertBefore(row, tbody.firstChild);
+  }
 }
 
 function selectPackage(packageName) {
@@ -355,24 +395,51 @@ function selectPackage(packageName) {
   }
 }
 
-function initMobileMenu() {
-  const btn = document.getElementById('mobile-toggle');
-  const nav = document.getElementById('nav-menu');
+/* --------------------------------------------------------------------------
+   11. AI ROOF IMAGE ANALYZER SIMULATOR
+   -------------------------------------------------------------------------- */
+function triggerRoofUpload() {
+  const input = document.getElementById('roof-file-input');
+  if (input) input.click();
+}
 
-  if (btn && nav) {
-    btn.addEventListener('click', () => {
-      if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-      } else {
-        nav.style.display = 'flex';
-        nav.style.flexDirection = 'column';
-        nav.style.position = 'absolute';
-        nav.style.top = '100%';
-        nav.style.left = '0';
-        nav.style.width = '100%';
-        nav.style.background = 'var(--bg-card)';
-        nav.style.padding = '1.5rem';
-      }
-    });
+function handleRoofUpload(event) {
+  const file = event.target.files[0];
+  if (file) {
+    runAiRoofAnalysis('Custom Uploaded Roof', 520, 4.8, 'Very Low (97% Sun Harvest)');
   }
 }
+
+function analyzeSampleRoof(roofType) {
+  if (roofType === 'villa') {
+    runAiRoofAnalysis('Residential Luxury Villa', 600, 5.5, 'Low (96% Sun Harvest)');
+  } else if (roofType === 'factory') {
+    runAiRoofAnalysis('Commercial Textile Factory', 12500, 110.0, 'Zero Shading (99% Sun Harvest)');
+  } else if (roofType === 'farm') {
+    runAiRoofAnalysis('Agricultural Farm Land', 400, 7.5, 'Optimal Open Sun');
+  }
+}
+
+function runAiRoofAnalysis(label, area, kw, risk) {
+  const loader = document.getElementById('ai-loader');
+  const box = document.getElementById('ai-result-box');
+
+  if (loader && box) {
+    loader.style.display = 'block';
+    box.style.opacity = '0.3';
+
+    setTimeout(() => {
+      loader.style.display = 'none';
+      box.style.opacity = '1';
+
+      document.getElementById('ai-roof-area').innerText = `${area.toLocaleString('en-IN')} Sq. Ft`;
+      document.getElementById('ai-rec-kw').innerText = `${kw} kW TOPCon`;
+      document.getElementById('ai-shadow-risk').innerText = risk;
+
+      let subsidyText = "₹78,000 Direct Bank Credit";
+      if (kw > 50) subsidyText = "40% Accelerated Tax Depreciation";
+      document.getElementById('ai-subsidy-est').innerText = subsidyText;
+    }, 1200);
+  }
+}
+

@@ -339,7 +339,81 @@
         </div>
       </section>
 
-      <!-- WHY CHOOSE US (TESLA / STRIPE STYLE GLASS CARDS) -->
+      <!-- AI ROOF IMAGE ANALYZER SECTION -->
+      <section class="section bg-darker" id="roof-analyzer">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Computer Vision AI</span>
+            <h2 class="section-title">Instant AI Rooftop Photo Analyzer</h2>
+            <p class="section-subtitle">Upload your house rooftop photo or satellite view for instant AI shadow analysis & solar potential rating.</p>
+          </div>
+
+          <div class="roof-analyzer-card glass-panel">
+            <div class="analyzer-grid">
+              
+              <!-- Upload Dropzone -->
+              <div class="analyzer-uploader">
+                <div class="dropzone-box" id="dropzone-box" onclick="triggerRoofUpload()">
+                  <i class="fa-solid fa-cloud-arrow-up dropzone-icon text-gold"></i>
+                  <h4>Upload House or Roof Photo</h4>
+                  <p>Drag & drop JPG/PNG image here or <strong>Click to Browse</strong></p>
+                  <input type="file" id="roof-file-input" accept="image/*" style="display:none" onchange="handleRoofUpload(event)">
+                </div>
+
+                <div class="sample-photos-row margin-top-md">
+                  <span class="sample-label">Or test with sample roof photos:</span>
+                  <div class="samples-flex">
+                    <button class="sample-btn" onclick="analyzeSampleRoof('villa')"><i class="fa-solid fa-house"></i> Luxury Villa</button>
+                    <button class="sample-btn" onclick="analyzeSampleRoof('factory')"><i class="fa-solid fa-industry"></i> Factory Roof</button>
+                    <button class="sample-btn" onclick="analyzeSampleRoof('farm')"><i class="fa-solid fa-wheat-awn"></i> Farm House</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AI Processing Results Display -->
+              <div class="analyzer-results">
+                <div class="ai-processing-loader" id="ai-loader" style="display:none">
+                  <div class="spinner"></div>
+                  <p>AI Model Scanning Rooftop Insolation & Shadow Obstacles...</p>
+                </div>
+
+                <div class="ai-result-content" id="ai-result-box">
+                  <div class="result-header">
+                    <span class="ai-confidence-badge"><i class="fa-solid fa-shield-check text-green"></i> 98.4% Feasibility Score</span>
+                    <h4 class="text-gold">Rooftop Solar Analysis Complete</h4>
+                  </div>
+
+                  <div class="ai-metrics-grid">
+                    <div class="ai-metric-box">
+                      <span class="ai-m-lbl">Detected Roof Surface</span>
+                      <strong class="ai-m-val text-cyan" id="ai-roof-area">450 Sq. Ft</strong>
+                    </div>
+                    <div class="ai-metric-box">
+                      <span class="ai-m-lbl">Optimal System Size</span>
+                      <strong class="ai-m-val text-gold" id="ai-rec-kw">4.2 kW</strong>
+                    </div>
+                    <div class="ai-metric-box">
+                      <span class="ai-m-lbl">Shadow Obstacle Factor</span>
+                      <strong class="ai-m-val text-green" id="ai-shadow-risk">Low (95% Sun Harvest)</strong>
+                    </div>
+                    <div class="ai-metric-box">
+                      <span class="ai-m-lbl">Estimated Govt Subsidy</span>
+                      <strong class="ai-m-val text-gold" id="ai-subsidy-est">₹78,000 Direct Bank Credit</strong>
+                    </div>
+                  </div>
+
+                  <div class="ai-action-footer margin-top-md">
+                    <button class="btn btn-primary btn-block shadow-glow" onclick="triggerProposalModal()">
+                      <i class="fa-solid fa-file-pdf"></i> Download Complete 10-Page AI Proposal
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section" id="why-us">
         <div class="container">
           <div class="section-header text-center">
@@ -721,10 +795,9 @@
 
             <div class="portfolio-card glass-card" data-category="res">
               <div class="portfolio-img-box">
-                <div class="portfolio-placeholder img-res-2">
-                  <div class="placeholder-overlay">
-                    <span class="port-tag">5 kW Rooftop</span>
-                  </div>
+                <img src="images/hero_solar_rooftop.jpg" alt="Smart Green Home Rooftop Solar Chennai" class="port-img">
+                <div class="placeholder-overlay">
+                  <span class="port-tag">5 kW Rooftop</span>
                 </div>
               </div>
               <div class="portfolio-content">
@@ -739,10 +812,9 @@
 
             <div class="portfolio-card glass-card" data-category="com">
               <div class="portfolio-img-box">
-                <div class="portfolio-placeholder img-com-3">
-                  <div class="placeholder-overlay">
-                    <span class="port-tag">2.5 MW Ground Mount</span>
-                  </div>
+                <img src="images/commercial_solar_factory.jpg" alt="Salem Steel Ancillary Plant Industrial Solar" class="port-img">
+                <div class="placeholder-overlay">
+                  <span class="port-tag">2.5 MW Ground Mount</span>
                 </div>
               </div>
               <div class="portfolio-content">
@@ -890,7 +962,63 @@
         </div>
       </section>
 
-      <!-- CERTIFICATIONS SECTION -->
+      <!-- SOLAR ACADEMY & KNOWLEDGE CENTER SECTION -->
+      <section class="section" id="academy">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge"><i class="fa-solid fa-graduation-cap text-gold"></i> Solar Learning Hub</span>
+            <h2 class="section-title">Solaria Energy Academy & Resources</h2>
+            <p class="section-subtitle">Master rooftop solar technicalities, government subsidy policies, and commercial tax benefits.</p>
+          </div>
+
+          <div class="academy-grid">
+            <div class="academy-card glass-card">
+              <div class="academy-badge">Video Guide</div>
+              <div class="academy-thumb">
+                <i class="fa-solid fa-circle-play play-icon text-gold"></i>
+              </div>
+              <div class="academy-content">
+                <h4>PM Surya Ghar Scheme: Step-By-Step Application Walkthrough 2026</h4>
+                <p>Learn how to submit your TANGEDCO application and claim your ₹78,000 direct bank transfer subsidy.</p>
+                <div class="academy-footer">
+                  <span><i class="fa-solid fa-clock"></i> 8 mins watch</span>
+                  <a href="#contact" class="text-gold">Watch Video <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="academy-card glass-card">
+              <div class="academy-badge badge-green">Technical Paper</div>
+              <div class="academy-thumb">
+                <i class="fa-solid fa-file-pdf pdf-icon text-green"></i>
+              </div>
+              <div class="academy-content">
+                <h4>N-Type TOPCon vs Mono-PERC Solar Panels: Heat Degradation Comparison</h4>
+                <p>Why N-Type TOPCon cells generate 14% more energy in Tamil Nadu's high-temperature climate.</p>
+                <div class="academy-footer">
+                  <span><i class="fa-solid fa-book"></i> 5 mins read</span>
+                  <a href="#contact" class="text-green">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="academy-card glass-card">
+              <div class="academy-badge badge-cyan">Tax & Financials</div>
+              <div class="academy-thumb">
+                <i class="fa-solid fa-chart-line chart-icon text-cyan"></i>
+              </div>
+              <div class="academy-content">
+                <h4>40% Accelerated Depreciation Guide for Factory & Textile Mill Owners</h4>
+                <p>Complete tax write-off breakdown for commercial solar rooftop investments under the Income Tax Act.</p>
+                <div class="academy-footer">
+                  <span><i class="fa-solid fa-calculator"></i> B2B Special</span>
+                  <a href="#contact" class="text-cyan">Download PDF <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section" id="certifications">
         <div class="container">
           <div class="section-header text-center">

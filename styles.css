@@ -854,8 +854,150 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   7. FEATURES & SERVICES GRID
+   AI ROOF ANALYZER & COMPUTER VISION STYLES
    -------------------------------------------------------------------------- */
+.roof-analyzer-card {
+  padding: 3rem;
+}
+
+.analyzer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.dropzone-box {
+  background: var(--glass-bg);
+  border: 2px dashed var(--glass-border-hover);
+  border-radius: var(--border-radius-md);
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.dropzone-box:hover {
+  background: rgba(255, 183, 3, 0.05);
+  border-color: var(--color-gold);
+  transform: scale(1.02);
+}
+
+.dropzone-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.samples-flex {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.sample-btn {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--border-radius-full);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.sample-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.ai-confidence-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.ai-metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ai-metric-box {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  padding: 1rem;
+  border-radius: var(--border-radius-sm);
+}
+
+.ai-m-lbl {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.ai-m-val {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   SOLAR ACADEMY & KNOWLEDGE CENTER
+   -------------------------------------------------------------------------- */
+.academy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.academy-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.academy-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--color-gold);
+  color: #000;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--border-radius-full);
+}
+
+.academy-thumb {
+  height: 160px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  font-size: 3rem;
+}
+
+.academy-content h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.academy-content p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+}
+
+.academy-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 0.8rem;
+}
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
